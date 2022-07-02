@@ -16,7 +16,7 @@ function Api() {
             }
 
   return (
-    <div><h1>Cat Facts</h1>
+    <div><h1>Cat Facts Api</h1>
     <br/>
         
     <div className='center'>
