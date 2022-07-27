@@ -1,11 +1,11 @@
 import { useState} from 'react'
 import axios from 'axios'
-import {useSpeechSynthesis} from 'react-speech-kit';
+
 
 function Api() {
 
-    const [catfact, setcatFact] = useState('');
-    const {speak} = useSpeechSynthesis();
+    const [catfact, setcatFact] = useState('Click that red Button to get facts');
+    
 
   
 
@@ -20,10 +20,7 @@ function Api() {
             
             }
 
-            const SpeakFunc = () =>{
-              {speak({text: catfact})}
-            }
-
+           
            
 
   return (
@@ -32,7 +29,7 @@ function Api() {
         
     <div className='center'>
     <button className='button' onClick={Api1}>Get Facts</button>
-    <button className='button' onClick={SpeakFunc}>Listen it</button>
+    
     
     </div>
     
